@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowlessProject</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon/FlowlessProject.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+<style>
+    body {
+      background-color: #1c1c1c;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+        margin: 5px auto 50px;
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .text-content {
+        max-width: 50%;
+    }
+
+    .text-content h1 {
+        font-size: 4em;
+        line-height: 0.7;
+        color: #df5407;
+    }
+
+    .text-content h2 {
+      font-size: 3.8em;
+      line-height: 0.5;
+      color: #fca404;
+      margin-bottom: 20px;
+    }
+
+    .text-content p {
+      font-size: 2em;
+      line-height: 1.5;
+      padding-left: 20px;
+      border-left: 2.5px solid #fff; 
+      margin: 0;
+    }
+
+    .photo img {
+      max-width: 550px;
+      border-radius: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        float: left;
+        margin-left: 330px;
+      }
+  
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 50px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        width: fit-content;
+      }
+  
+      .button-orange {
+        background: linear-gradient(90deg, #ff7e00, #fca404);
+        position: relative;
+        font-size: 1.7em;
+      }
+  
+      .button-orange span {
+        font-size: 0.8em;
+        background: linear-gradient(90deg, #ff9a03, #ff7e00);
+        box-shadow: 0 0 5px 0.3px rgb(0,0,0);
+        color: #ffffff;
+        padding: 5px 12px;
+        border-radius: 15px;
+        margin-left: 10px;
+        position: absolute;
+        top: -10px;
+        right: -30px;
+        transform:rotate(20deg);
+      }
+  
+      .button-blue {
+        background-color: #0077ff;
+        display: flex;
+        align-items: center;
+        padding: 18px 50px;
+        font-size: 1.7em;
+      }
+  
+      .button-blue img {
+        margin-right: 10px;
+        height: 35px;
+      }
+      
+      @media (max-width: 576px) {
+        body {
+          padding: 10px;
+        }
+    
+        .logo {
+          margin: 10px auto 0px;
+          width: 40px;
+          height: 40px;
+        }
+    
+        .text-content h1 {
+          font-size: 2em;
+          line-height: 0.3;
+        }
+    
+        .text-content h2 {
+          font-size: 2em;
+          margin-bottom: 15px;
+        }
+    
+        .text-content p {
+          font-size: 1em;
+          padding-left: 10px;
+        }
+    
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+      
+          .text-content {
+            max-width: 100%;
+            text-align: left;
+          }
+      
+          .photo {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+          }
+      
+          .photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+          }
+          
+        .buttons {
+            margin-left: 0;
+            width: 100%; 
+            align-items: center;
+          }
+      
+          .buttons .button {
+            width: 90%;
+            max-width: 300px;
+            text-align: center;
+            font-size: 1.5em;
+          }
+    
+        .button-orange span {
+          font-size: 0.7em;
+          padding: 3px 8px;
+          top: -8px;
+          right: -20px;
+        }
+    
+        .button-blue img {
+          height: 20px;
+        }
+      }
+</style>
+</head>
+
+<header>
+    <img class="logo" src="assets/images/favicon/FlowlessProject.ico" alt="logo.img" width="55" height="55">
+</header>
+
+<body>
+    <div class="container">
+      <div class="text-content">
+        <h1><b>FlowlessProject</b></h1>
+        <h2><span style="color: white;"><b>Start with</span> yourself</b></h2>
+        <p>A wonderful Minecraft server for spending time with your friends. Our server will provide you with stable
+          operation, no lags, regular updates, and support from the project administration.</p>
+      </div>
+      <div class="photo">
+        <img src="assets/images/photo/image.jpg" alt="photo">
+      </div>
+    </div>
+</body>
+<main>
+    <div class="buttons">
+        <a href="#" class="button button-orange">
+          mc.flowlessproject.net
+          <span>Join now!</span>
+        </a>
+        <a href="#" class="button button-blue">
+          <img src="assets/images/photo/discord.png" alt="Discord">
+          Join our Discord
+        </a>
+      </div>
+</main>
+</html>
